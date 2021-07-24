@@ -16,6 +16,8 @@
 		9F9E321D26A5C71F0005ADE8 /* MuviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E321C26A5C71F0005ADE8 /* MuviTests.swift */; };
 		9F9E322826A5C71F0005ADE8 /* MuviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E322726A5C71F0005ADE8 /* MuviUITests.swift */; };
 		9F9E323726A5C7F20005ADE8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9E323626A5C7F20005ADE8 /* Alamofire */; };
+		9F9E323A26A5D1DC0005ADE8 /* MuviService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E323926A5D1DC0005ADE8 /* MuviService.swift */; };
+		9F9E324026A5D2AA0005ADE8 /* MuviRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E323F26A5D2AA0005ADE8 /* MuviRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		9F9E322326A5C71F0005ADE8 /* MuviUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuviUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9E322726A5C71F0005ADE8 /* MuviUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuviUITests.swift; sourceTree = "<group>"; };
 		9F9E322926A5C71F0005ADE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9E323926A5D1DC0005ADE8 /* MuviService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuviService.swift; sourceTree = "<group>"; };
+		9F9E323F26A5D2AA0005ADE8 /* MuviRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuviRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		9F9E320426A5C71E0005ADE8 /* Muvi */ = {
 			isa = PBXGroup;
 			children = (
+				9F9E323B26A5D1FC0005ADE8 /* Repository */,
+				9F9E323826A5D1BD0005ADE8 /* Muvi API */,
 				9F9E320526A5C71E0005ADE8 /* AppDelegate.swift */,
 				9F9E320726A5C71E0005ADE8 /* SceneDelegate.swift */,
 				9F9E320926A5C71E0005ADE8 /* ViewController.swift */,
@@ -128,6 +134,46 @@
 				9F9E322926A5C71F0005ADE8 /* Info.plist */,
 			);
 			path = MuviUITests;
+			sourceTree = "<group>";
+		};
+		9F9E323826A5D1BD0005ADE8 /* Muvi API */ = {
+			isa = PBXGroup;
+			children = (
+				9F9E323926A5D1DC0005ADE8 /* MuviService.swift */,
+				9F9E323E26A5D2710005ADE8 /* Response */,
+				9F9E323D26A5D26C0005ADE8 /* Helper */,
+				9F9E323C26A5D2020005ADE8 /* Entity */,
+			);
+			path = "Muvi API";
+			sourceTree = "<group>";
+		};
+		9F9E323B26A5D1FC0005ADE8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F9E323F26A5D2AA0005ADE8 /* MuviRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F9E323C26A5D2020005ADE8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9F9E323D26A5D26C0005ADE8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9F9E323E26A5D2710005ADE8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9E320A26A5C71E0005ADE8 /* ViewController.swift in Sources */,
+				9F9E324026A5D2AA0005ADE8 /* MuviRepository.swift in Sources */,
 				9F9E320626A5C71E0005ADE8 /* AppDelegate.swift in Sources */,
+				9F9E323A26A5D1DC0005ADE8 /* MuviService.swift in Sources */,
 				9F9E320826A5C71E0005ADE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
