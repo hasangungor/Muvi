@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F3C784126AC39030078F41E /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		9F9E320226A5C71E0005ADE8 /* Muvi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muvi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9E320526A5C71E0005ADE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9E320726A5C71E0005ADE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				9F9E320E26A5C71F0005ADE8 /* Assets.xcassets */,
 				9F9E321026A5C71F0005ADE8 /* LaunchScreen.storyboard */,
 				9F9E321326A5C71F0005ADE8 /* Info.plist */,
+				9F3C784126AC39030078F41E /* Secret.xcconfig */,
 			);
 			path = Muvi;
 			sourceTree = "<group>";
