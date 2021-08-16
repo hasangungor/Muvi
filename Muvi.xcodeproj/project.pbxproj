@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8AA05526CAC6050057EBF7 /* MuviService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E323926A5D1DC0005ADE8 /* MuviService.swift */; };
 		9F9E320626A5C71E0005ADE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E320526A5C71E0005ADE8 /* AppDelegate.swift */; };
 		9F9E320826A5C71E0005ADE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E320726A5C71E0005ADE8 /* SceneDelegate.swift */; };
 		9F9E320A26A5C71E0005ADE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E320926A5C71E0005ADE8 /* ViewController.swift */; };
@@ -16,7 +17,6 @@
 		9F9E321D26A5C71F0005ADE8 /* MuviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E321C26A5C71F0005ADE8 /* MuviTests.swift */; };
 		9F9E322826A5C71F0005ADE8 /* MuviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E322726A5C71F0005ADE8 /* MuviUITests.swift */; };
 		9F9E323726A5C7F20005ADE8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9E323626A5C7F20005ADE8 /* Alamofire */; };
-		9F9E323A26A5D1DC0005ADE8 /* MuviService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E323926A5D1DC0005ADE8 /* MuviService.swift */; };
 		9F9E324026A5D2AA0005ADE8 /* MuviRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E323F26A5D2AA0005ADE8 /* MuviRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F1060A526C2E5230049F7BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9F1060B026C2EA3D0049F7BE /* MuviAPI 10.08.2021 20.04.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "MuviAPI 10.08.2021 20.04.xcarchive"; path = "../../MuviAPI 2021-08-10 20-08-24/MuviAPI 10.08.2021 20.04.xcarchive"; sourceTree = "<group>"; };
 		9F3C784126AC39030078F41E /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		9F9E320226A5C71E0005ADE8 /* Muvi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muvi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9E320526A5C71E0005ADE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1060AD26C2E9020049F7BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1060B026C2EA3D0049F7BE /* MuviAPI 10.08.2021 20.04.xcarchive */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F9E31F926A5C71E0005ADE8 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,7 @@
 				9F9E321B26A5C71F0005ADE8 /* MuviTests */,
 				9F9E322626A5C71F0005ADE8 /* MuviUITests */,
 				9F9E320326A5C71E0005ADE8 /* Products */,
+				9F1060AD26C2E9020049F7BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +211,7 @@
 				9F9E31FE26A5C71E0005ADE8 /* Sources */,
 				9F9E31FF26A5C71E0005ADE8 /* Frameworks */,
 				9F9E320026A5C71E0005ADE8 /* Resources */,
+				9F1060A526C2E5230049F7BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,9 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9E320A26A5C71E0005ADE8 /* ViewController.swift in Sources */,
+				9F8AA05526CAC6050057EBF7 /* MuviService.swift in Sources */,
 				9F9E324026A5D2AA0005ADE8 /* MuviRepository.swift in Sources */,
 				9F9E320626A5C71E0005ADE8 /* AppDelegate.swift in Sources */,
-				9F9E323A26A5D1DC0005ADE8 /* MuviService.swift in Sources */,
 				9F9E320826A5C71E0005ADE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +399,7 @@
 /* Begin XCBuildConfiguration section */
 		9F9E322A26A5C71F0005ADE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3C784126AC39030078F41E /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -492,6 +517,7 @@
 		9F9E322D26A5C71F0005ADE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +537,7 @@
 		9F9E322E26A5C71F0005ADE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
